@@ -3792,6 +3792,7 @@ hr {
         .modern-portfolio-wrapper .signature {
           font-size: 3rem;  
           font-weight: 700;
+          line-height: 1;
             /* font-style: italic; */
             /* color: #2c3e50; */
             color: var(--primary);
@@ -3931,7 +3932,7 @@ hr {
             }
             
             .modern-portfolio-wrapper .signature {
-                font-size: 36px;
+                font-size: 50px;
             }
             
             .modern-portfolio-wrapper .main-text {
@@ -3991,7 +3992,7 @@ hr {
 
 .parent-newton {
       position: absolute;
-    bottom: -24px;
+    bottom: -42px;
     right: 0px;
 }
 
@@ -4578,6 +4579,11 @@ hr {
       margin-bottom: 32px;
       opacity: 0;
       animation: slideUp 0.8s ease forwards 0.6s;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
     }
 
     .profile-card-wrapper .stats {
@@ -10561,6 +10567,12 @@ footer .cs_fs_90 {
     .book-display {
           display: grid;
     }
+    .modern-portfolio-wrapper .signature {
+        font-size: 48px;
+    }
+    .hero-sec {
+        padding-top: 110px;
+    }
 }
 
 
@@ -10601,6 +10613,9 @@ footer .cs_fs_90 {
     left: 45px !important;
     bottom: -33px !important;
 }
+        .modern-portfolio-wrapper .signature {
+            font-size: 38px;
+        }
 .swiper {
   padding: 0;
 }
@@ -10611,4 +10626,11 @@ footer .cs_fs_90
  {
     font-size: 38px;
 }
+}
+
+
+@media screen and (max-width:476px) { 
+    .modern-portfolio-wrapper .signature {
+            font-size: 26px;
+        }
 }
